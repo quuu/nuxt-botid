@@ -5,7 +5,6 @@ export default defineNuxtPlugin({
   enforce: 'pre',
   // Setup botid client
   setup () {
-    console.log('botid.client')
     initBotId({
       protect: [
         { path: '/api/post-data', method: 'POST' }
